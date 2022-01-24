@@ -1,2 +1,1 @@
-# Webpack Configuration
 # Ecommerce Website
