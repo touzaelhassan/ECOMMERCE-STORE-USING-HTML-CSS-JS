@@ -1,7 +1,29 @@
-.image {
-  width: 500px;
+/* Start Variables */
+:root {
+  --main-color: #ff3956;
+  --gray-color: #868686;
+}
+/* End Variables */
+
+/* Start General Styles */
+body {
+  font-family: 'Cairo', sans-serif;
+}
+/* End General Styles */
+
+/* Start Header Section */
+.header {
+  border: 3px solid red;
 }
 
-.image img {
+.navbar-form {
   width: 100%;
 }
+
+/* Start Media Queries */
+@media screen and (min-width: 768px) {
+  .navbar-form {
+    width: 350px;
+  }
+}
+/* End Header Section */
