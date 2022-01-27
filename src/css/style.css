@@ -8,6 +8,7 @@
 /* Start General Styles */
 body {
   font-family: 'Cairo', sans-serif;
+  height: 2000px;
 }
 
 ::placeholder {
@@ -90,3 +91,131 @@ body {
   }
 }
 /* End Header Section */
+
+/* Start Hero Section */
+.hero {
+  margin-top: 25px;
+}
+
+.carousel__item {
+  position: relative;
+}
+
+.carousel-image {
+  border: 1px solid #eee;
+  padding: 20px;
+  height: 400px;
+  text-align: start;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-info {
+  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid #eee;
+  line-height: 1.7;
+}
+
+.carousel-category {
+  color: var(--gray-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.carousel-title {
+  color: #272727;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.carousel-description {
+  color: #666;
+  font-size: 15px;
+}
+
+.carousel-btn {
+  display: inline-block;
+  margin-top: 13px;
+  padding: 7px 20px;
+  border: 2px solid var(--main-color) !important;
+  color: #fff !important;
+  background-color: var(--main-color) !important;
+  text-decoration: none;
+}
+
+.carousel-control-prev {
+  opacity: 0 !important;
+}
+
+.carousel-control-next {
+  opacity: 0 !important;
+}
+
+.slider-arrow {
+  color: var(--main-color);
+  font-size: 30px;
+}
+
+.carousel-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  height: 80px;
+}
+
+.carousel-list img {
+  margin-left: 15px;
+  padding: 5px;
+  border: 2px solid #eee;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 65px;
+  }
+
+  .carousel-image img {
+    width: auto;
+    height: auto;
+  }
+
+  .carousel-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 50px;
+    width: 50%;
+    height: 100%;
+    text-align: start;
+  }
+
+  .carousel-btn:hover {
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+    background-color: #f8f9fa !important;
+  }
+
+  .carousel-list {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 30px;
+    height: 100%;
+    text-align: start;
+  }
+}
+
+/* End Hero Section */
