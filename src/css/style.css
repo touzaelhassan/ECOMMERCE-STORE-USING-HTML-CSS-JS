@@ -147,17 +147,19 @@ body {
   text-decoration: none;
 }
 
+.slider-arrow {
+  color: rgb(196, 196, 196);
+  font-size: 30px;
+}
+
 .carousel-control-prev {
   opacity: 0 !important;
+  right: -40px;
 }
 
 .carousel-control-next {
   opacity: 0 !important;
-}
-
-.slider-arrow {
-  color: var(--main-color);
-  font-size: 30px;
+  left: -40px;
 }
 
 .carousel-list {
@@ -203,6 +205,14 @@ body {
 
   .carousel-list {
     justify-content: start;
+  }
+
+  .carousel-control-prev {
+    opacity: 1 !important;
+  }
+
+  .carousel-control-next {
+    opacity: 1 !important;
   }
 }
 
