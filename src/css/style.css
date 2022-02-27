@@ -9,6 +9,7 @@
 body {
   font-family: 'Cairo', sans-serif;
   height: 2000px;
+  overflow-x: hidden;
 }
 
 ::placeholder {
@@ -229,3 +230,49 @@ body {
 }
 
 /* End Hero Section */
+
+/* Start Features Section */
+
+.features {
+  margin: 25px 0;
+  padding: 25px 0;
+}
+
+.features__title {
+  text-align: center;
+}
+
+.features__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.feature__item {
+  border: 2px solid #eee;
+  padding: 30px 20px;
+  width: 450px;
+  max-width: 450px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.feature__title {
+  margin-top: 10px;
+  color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    margin: 0;
+    padding: 60px 0;
+  }
+  .features__content {
+    flex-direction: row;
+    margin-top: 35px;
+  }
+}
+
+/* End Features Section */
