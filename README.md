@@ -8,3 +8,5 @@ Online shopping is a form of electronic commerce which allows consumers to direc
 ## Tools
 - Git 
 - Webpack
+## Design
+![store1](https://user-images.githubusercontent.com/59705964/156252013-667058dc-061e-4b8c-a65d-0319fb2dd54a.PNG)
