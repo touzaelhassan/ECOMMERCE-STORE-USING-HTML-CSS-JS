@@ -277,7 +277,6 @@ body {
 /* End Features Section */
 
 /* Start Most Sold Section */
-
 .most-sold {
   padding: 50px 0;
 }
@@ -297,6 +296,7 @@ body {
 
 .price {
   color: #eb2a46;
+  font-weight: 600;
 }
 
 .rating-gold {
@@ -304,7 +304,7 @@ body {
 }
 
 .rating-gray {
-  color: gray;
+  color: rgb(196, 196, 196);
 }
 
 .custom-carousel-indicators {
@@ -313,5 +313,69 @@ body {
 .custom-carousel-indicators [data-bs-target] {
   background-color: #ff3956;
 }
-
 /* End Most Sold Section */
+
+/* Start Brands Section */
+.brands {
+  margin: 40px 0;
+  padding: 50px 0;
+  background-color: #fafafa;
+}
+
+.brand__product {
+  padding: 20px;
+}
+.brand__product .slide {
+  padding: 20px;
+  border: 2px solid #eee;
+  background-color: #fff;
+}
+
+.brand__link {
+  display: inline-block;
+  margin: 10px 0;
+  border: 2px solid #eb2a46;
+  border-radius: 3px;
+  padding: 5px 8px;
+  color: #eb2a46;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.brand__name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.brand__description {
+  margin: 10px 0;
+  color: #666;
+}
+
+.carousel-control-prev-icon {
+  background-color: #eb2a46;
+  border-radius: 3px;
+}
+
+.carousel-control-next-icon {
+  background-color: #eb2a46;
+  border-radius: 3px;
+}
+.carousel-control-next {
+  left: 0;
+  bottom: -78%;
+}
+.carousel-control-prev {
+  right: 79%;
+  bottom: -78%;
+}
+
+.brand__icon {
+  display: block;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 2px;
+  background-color: #eb2a46;
+}
+/* End Brands Section */
