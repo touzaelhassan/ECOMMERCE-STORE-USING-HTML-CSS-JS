@@ -8,7 +8,7 @@
 /* Start General Styles */
 body {
   font-family: 'Cairo', sans-serif;
-  height: 2000px;
+  height: 3000px;
   overflow-x: hidden;
 }
 
@@ -276,6 +276,42 @@ body {
 }
 /* End Features Section */
 
-/* Start Top Product Section */
+/* Start Most Sold Section */
 
-/* End Top Product Section */
+.most-sold {
+  padding: 50px 0;
+}
+
+.card {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 1px solid #ff3956;
+}
+
+.card-body {
+  padding: 1rem 0;
+}
+
+.price {
+  color: #eb2a46;
+}
+
+.rating-gold {
+  color: gold;
+}
+
+.rating-gray {
+  color: gray;
+}
+
+.custom-carousel-indicators {
+  bottom: -17%;
+}
+.custom-carousel-indicators [data-bs-target] {
+  background-color: #ff3956;
+}
+
+/* End Most Sold Section */
