@@ -359,6 +359,7 @@ body {
   color: #eb2a46;
   font-weight: 500;
   text-decoration: none;
+  margin-left: 40%;
 }
 
 .brand__name {
@@ -396,6 +397,12 @@ body {
   padding: 8px;
   border-radius: 2px;
   background-color: #eb2a46;
+}
+
+@media screen and (min-width: 768px) {
+  .brand__link {
+    margin-left: 0;
+  }
 }
 /* End Brands Section */
 
