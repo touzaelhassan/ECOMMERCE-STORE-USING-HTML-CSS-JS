@@ -8,7 +8,6 @@
 /* Start General Styles */
 body {
   font-family: 'Cairo', sans-serif;
-  height: 3000px;
   overflow-x: hidden;
 }
 
@@ -336,6 +335,7 @@ body {
 /* Start Brands Section */
 .brands {
   margin: 40px 0;
+  margin-bottom: 0;
   padding: 50px 0;
   background-color: #fafafa;
 }
@@ -397,3 +397,129 @@ body {
   background-color: #eb2a46;
 }
 /* End Brands Section */
+
+/* Start Brands Logos */
+.brands-logos {
+  padding: 50px 0;
+  background-color: #dbeefa;
+  color: #555;
+  text-align: center;
+}
+
+.brands-logos-title {
+  margin-bottom: 25px;
+}
+
+.brands-logos__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.brand-item {
+  margin: 0 5%;
+  width: 70px;
+}
+
+.brand-item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .brand-item {
+    width: 85px;
+  }
+}
+/* End Brands Logos */
+
+/* Start Footer Section */
+.footer {
+  padding: 35px 0;
+  background-color: #272727;
+}
+
+.footer__logo {
+  text-align: center;
+}
+
+.footer__navigation {
+  margin: auto;
+  margin-top: 25px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding-bottom: 10px;
+  width: 90%;
+}
+
+.footer__navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer__navigation ul li {
+  margin: 0 10px;
+}
+
+.footer__navigation ul a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer__form {
+  padding: 25px 0;
+}
+
+.form__title {
+  color: gray;
+  text-align: center;
+}
+
+.footer__form form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__form input {
+  border: none;
+  padding: 10px;
+  width: 300px;
+  background-color: rgba(128, 128, 128, 0.3);
+  text-align: end;
+  outline: none;
+  color: #fff;
+}
+
+.footer__form ::placeholder {
+  color: gray !important;
+}
+
+.footer__form button {
+  display: block;
+  border: none;
+  width: 100px;
+  background-color: #eb2a46;
+  color: #fff;
+}
+
+.social-media {
+  margin: 25px 0;
+  color: gray;
+  text-align: center;
+}
+
+.social-media i {
+  margin: 0 5px;
+  font-size: 35px;
+}
+
+.copyright {
+  color: gray;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__navigation {
+    width: 50%;
+  }
+}
+/* End Footer Section */
