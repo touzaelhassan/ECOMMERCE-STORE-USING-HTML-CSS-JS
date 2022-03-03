@@ -15,6 +15,25 @@ body {
 ::placeholder {
   color: rgb(202, 202, 202) !important;
 }
+
+.section__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.section__title h3 {
+  margin: 0;
+}
+
+.section__title span {
+  position: relative;
+  bottom: 5px;
+
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: #eb2a46;
+}
 /* End General Styles */
 
 /* Start Header Section */
@@ -236,6 +255,7 @@ body {
 .features {
   margin: 25px 0;
   padding: 25px 0;
+  padding-bottom: 0;
 }
 
 .features__title {
@@ -247,7 +267,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  margin-top: 25px;
 }
 
 .feature__item {
@@ -271,7 +290,6 @@ body {
   }
   .features__content {
     flex-direction: row;
-    margin-top: 35px;
   }
 }
 /* End Features Section */
