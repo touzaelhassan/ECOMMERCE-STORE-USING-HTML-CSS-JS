@@ -253,8 +253,10 @@ body {
 
 .features {
   margin: 25px 0;
-  padding: 25px 0;
-  padding-bottom: 0;
+  margin-top: 60px;
+  border: 2px solid #eee;
+  padding: 40px 0;
+  background-color: #fafafa;
 }
 
 .features__title {
@@ -273,7 +275,7 @@ body {
   padding: 30px 20px;
   width: 450px;
   max-width: 450px;
-  background-color: #fafafa;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -284,8 +286,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .features {
-    margin: 0;
-    padding: 60px 0;
+    padding: 65px 0 80px 0;
   }
   .features__content {
     flex-direction: row;
@@ -434,7 +435,7 @@ body {
 
 /* Start Footer Section */
 .footer {
-  padding: 35px 0;
+  padding-top: 35px;
   background-color: #272727;
 }
 
@@ -513,7 +514,10 @@ body {
 }
 
 .copyright {
-  color: gray;
+  margin: 0;
+  padding: 25px 0;
+  background-color: #1b1b1b;
+  color: rgb(88, 88, 88);
   text-align: center;
 }
 
