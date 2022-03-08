@@ -65,8 +65,13 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/index.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'product.html',
+      template: path.resolve(__dirname, 'src/product.html'),
+    }),
 
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
+    new MiniCssExtractPlugin({ filename: 'css/product.css' }),
     new CssMinimizerPlugin(),
   ],
 };

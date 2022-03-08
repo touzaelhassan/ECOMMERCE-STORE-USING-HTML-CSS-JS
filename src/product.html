@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>متجر عربي | قميص بير رجالي</title>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container">
+          <a class="navbar-brand me-auto mb-3 me-lg-4" href="index.html"
+            >عربي</a
+          >
+          <div class="navbar-cart order-lg-5 ms-lg-3">
+            <i class="fas fa-shopping-cart d-block text-muted"></i>
+          </div>
+          <button
+            class="navbar-toggler p-0 rounded-0 text-muted shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars d-block"></i>
+          </button>
+          <form
+            class="d-flex border-top border-bottom py-4 py-lg-0 navbar-form"
+          >
+            <input
+              class="form-control m-0 rounded-0 shadow-none"
+              type="search"
+              placeholder="كلمة البحث"
+              aria-label="Search"
+            />
+            <button
+              class="btn navbar-btn px-4 rounded-0 shadow-none"
+              type="submit"
+            >
+              ابحث
+            </button>
+          </form>
+          <div
+            class="collapse navbar-collapse bg-light"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted active"
+                  aria-current="page"
+                  href="#"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-muted dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  أقسام المتجر
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أطفال</a></li>
+                  <li><a class="dropdown-item" href="#">نسائي</a></li>
+                  <li><a class="dropdown-item" href="#">رجالي</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">البحث المتقدم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">تواصل معنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Breadcrumbs Navigation -->
+    <div class="container">
+      <nav class="breadcrumb-navigation">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <span>الصفحة الرئيسية</span><i class="fas fa-angle-left"></i>
+          </li>
+          <li class="breadcrumb__item">
+            <span>ملابس رجالي</span><i class="fas fa-angle-left"></i>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="text-muted">قميص تيك بير</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End Breadcrumbs Navigation -->
+
+    <!-- Start Product Details -->
+    <section class="product">
+      <div class="container">
+        <div class="row product__content">
+          <div class="col-md-5 product__slider">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active product__image">
+                  <img src="images/product_1.jpg" alt="product" />
+                </div>
+                <div class="carousel-item product__image">
+                  <img src="images/product_2.jpg" alt="product" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 product__details">
+            <p class="text-muted product__category">ملابس رجالي</p>
+            <h1 class="product__title">
+              قميص تك فيك بير <span class="fs-4 fw-bold">35$</span>
+            </h1>
+            <p class="product__subtitle">
+              لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض العميل ليتصور
+              طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه .
+            </p>
+            <div class="product__brand">
+              <div class="product__brand__name">
+                <span class="text-muted">الماركة : </span
+                ><span class="fs-3 fw-bold">ADIDAS</span>
+              </div>
+              <div class="rating">
+                <i class="fas fa-star rating-gold"></i>
+                <i class="fas fa-star rating-gold"></i>
+                <i class="fas fa-star rating-gold"></i>
+                <i class="fas fa-star rating-gold"></i>
+                <i class="fas fa-star rating-gray"></i>
+              </div>
+            </div>
+            <div class="product__choice">
+              <div class="size__choice">
+                <p>المقاسات المتاحة :</p>
+                <ul>
+                  <li>S</li>
+                  <li class="active">M</li>
+                  <li>L</li>
+                  <li>XL</li>
+                </ul>
+              </div>
+              <div class="color__choice">
+                <p>الألوان المتاحة :</p>
+                <ul>
+                  <li class="black"></li>
+                  <li class="gold"></li>
+                  <li class="blue"></li>
+                  <li class="green"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product__footer">
+              <div class="product__btn">
+                <button>
+                  <span>إضافة لعربة الشراء</span
+                  ><i class="fas fa-cart-plus"></i>
+                </button>
+              </div>
+              <div class="product__number">
+                <span class="text-muted">العدد المطلوب : </span>
+                <span class="product__number__select"
+                  >1 <i class="fas fa-angle-down"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Product Details -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./images/logo_footer.png" alt="logo" />
+      </div>
+      <nav class="footer__navigation">
+        <ul>
+          <li><a href="#">الصفحة الرئيسية</a></li>
+          <li><a href="#">البحث المتقدم</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <div class="footer__form">
+        <p class="form__title">تابع النشرة البريدية لأحدث العروض</p>
+        <form>
+          <input type="email" placeholder="البريد الإلكتروني" />
+          <button type="submit">متابعة</button>
+        </form>
+      </div>
+      <div class="social-media">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-whatsapp-square"></i>
+      </div>
+      <p class="copyright">جميع الحقوق محفوظة للمتجر &copy; 2022</p>
+    </footer>
+    <!-- End Footer Section -->
+  </body>
+</html>
