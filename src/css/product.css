@@ -24,6 +24,7 @@
 /* Start Product Section */
 .product {
   margin: 50px 0;
+  margin-bottom: 0;
 }
 
 .product__image img {
@@ -164,14 +165,96 @@
   background-color: #fff;
 }
 
+.product__description {
+  margin-top: 50px;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.product__description p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.product__description ul li {
+  margin-bottom: 7px;
+}
+
+.product__description h3 {
+  margin: auto;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.product__comments {
+  margin-top: 25px;
+  padding: 20px 0;
+}
+
+.product__comments h3 {
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  width: 300px;
+  text-align: center;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comment__image {
+  width: 100px;
+}
+.comment__image img {
+  border: 1px solid #eee;
+  padding: 1px;
+  width: 100%;
+}
+
+.comment h5 {
+  margin-bottom: 10px;
+}
+
+.comment p {
+  margin-top: 5px;
+  color: #666;
+  font-size: 15px;
+}
+
 @media screen and (min-width: 768px) {
   .product {
     margin: 70px 0;
+    margin-bottom: 0;
   }
 
   .product__details {
     margin-top: 0;
     padding: 0 50px;
+  }
+  .product__description h3 {
+    margin-right: 0;
+    text-align: start;
+  }
+  .product__comments h3 {
+    margin-right: 0;
+    text-align: start;
+  }
+  .comment {
+    flex-direction: row;
+    align-items: center;
+
+    text-align: start;
   }
 }
 
@@ -180,4 +263,25 @@
     padding: 0 70px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .product__description p {
+    width: 55%;
+  }
+}
 /* End Product Section */
+
+/* Start Suggestions Section */
+.suggestions {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .suggestions {
+    margin-top: 25px;
+  }
+  .suggestions .section__title {
+    text-align: start;
+  }
+}
+/* End Suggestions Section */
