@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>متجر عربي | قميص بير رجالي</title>
+    <title>متجر عربي | صفحة الشراء</title>
   </head>
   <body>
     <!-- Start Header Section -->
@@ -21,9 +21,7 @@
             >عربي</a
           >
           <div class="navbar-cart order-lg-5 ms-lg-3">
-            <a href="checkout.html"
-              ><i class="fas fa-shopping-cart d-block text-muted"></i
-            ></a>
+            <i class="fas fa-shopping-cart d-block text-muted"></i>
           </div>
           <button
             class="navbar-toggler p-0 rounded-0 text-muted shadow-none"
@@ -103,168 +101,96 @@
             <span>الصفحة الرئيسية</span><i class="fas fa-angle-left"></i>
           </li>
           <li class="breadcrumb__item">
-            <span>ملابس رجالي</span><i class="fas fa-angle-left"></i>
-          </li>
-          <li class="breadcrumb__item">
-            <span class="text-muted">قميص تيك بير</span>
+            <span class="text-muted">عربة الشراء</span>
           </li>
         </ul>
       </nav>
     </div>
     <!-- End Breadcrumbs Navigation -->
 
-    <!-- Start Product Details Section -->
-    <section class="product">
+    <!-- Start Cart Section -->
+    <section class="cart">
       <div class="container">
-        <div class="row product__content">
-          <div class="col-md-5 product__slider">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active product__image">
-                  <img src="images/product_1.jpg" alt="product" />
+        <h2 class="cart__title">عربة الشراء</h2>
+        <table class="cart__table">
+          <thead>
+            <tr>
+              <th>المنتج</th>
+              <th>السعر</th>
+              <th>العدد المطلوب</th>
+              <th>السعر الإجمالي</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex cart__media">
+                  <img src="images/polo_1.jpg" alt="lacoste" />
+                  <div class="media-body">
+                    <h5 class="d-none d-sm-block">تي شرت رجالي بولو</h5>
+                    <p class="text-muted d-none d-sm-block">ملابس رجالي</p>
+                  </div>
                 </div>
-                <div class="carousel-item product__image">
-                  <img src="images/product_2.jpg" alt="product" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-7 product__details">
-            <p class="text-muted product__category">ملابس رجالي</p>
-            <h1 class="product__title">
-              قميص تك فيك بير <span class="fs-4 fw-bold">35$</span>
-            </h1>
-            <p class="product__subtitle">
-              تي شيرت من مزيج قطن البيكيه بكتل لونية مع فتحة رقبة مستديرة للرجال
-              تي شيرت جيرسيه مسامي مع طبعة ثلاثية الأبعاد للتمساح من مجموعة
-              Lacoste Sport للرجال .
-            </p>
-            <div class="product__brand">
-              <div class="product__brand__name">
-                <span class="text-muted">الماركة : </span
-                ><span class="fs-3 fw-bold">ADIDAS</span>
-              </div>
-              <div class="rating">
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gray"></i>
-              </div>
-            </div>
-            <div class="product__choice">
-              <div class="size__choice">
-                <p>المقاسات المتاحة :</p>
-                <ul>
-                  <li>S</li>
-                  <li class="active">M</li>
-                  <li>L</li>
-                  <li>XL</li>
-                </ul>
-              </div>
-              <div class="color__choice">
-                <p>الألوان المتاحة :</p>
-                <ul>
-                  <li class="black"></li>
-                  <li class="gold"></li>
-                  <li class="blue"></li>
-                  <li class="green"></li>
-                </ul>
-              </div>
-            </div>
-            <div class="product__footer">
-              <div class="product__btn">
-                <button>
-                  <span>إضافة لعربة الشراء</span
-                  ><i class="fas fa-cart-plus"></i>
-                </button>
-              </div>
-              <div class="product__number">
-                <span class="text-muted">العدد المطلوب : </span>
-                <span class="product__number__select"
-                  >1 <i class="fas fa-angle-down"></i
-                ></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__description">
-          <h3>وصف المنتج</h3>
-          <p>
-            متوفر في مجموعة متنوعة من الألوان الحيوية ، هذا التيشيرت الناعم من
-            الجيرسيه القطني البيما أمر لا بد منه أضفة إلى المجموعة الخاصة بك
-            تمتع بإرجاع مجاني. لإعادة بريد إلكتروني للمنتج الاتصال بفريق علاقات
-            الضيوف . نقبل المرتجعات بعد 21 يومًا من استلام طلبك .
-          </p>
-          <ul>
-            <li>جيرسيه قطن بيما</li>
-            <li>فتحة رقبة مستديرة</li>
-            <li>طباعة العلامة التجارية على شريط الياقة الداخلية</li>
-            <li>شعار التمساح الأخضر مطرز على الصدر</li>
-          </ul>
-        </div>
+              </td>
+              <td>400$</td>
 
-        <div class="product__comments">
-          <h3>التعليقات على المنتج</h3>
-          <div class="comment">
-            <div class="comment__image">
-              <img src="images/reviewer_1.jpg" alt="reviewer" />
-            </div>
-            <div class="comment__text">
-              <h5>محمد هاني</h5>
-              <div class="rating">
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gray"></i>
-              </div>
-              <p>منتج رائع أنصح بشرائه مصنوع من أقمشة عالية الجودة</p>
-            </div>
-          </div>
-          <div class="comment">
-            <div class="comment__image">
-              <img src="images/reviewer_2.jpg" alt="reviewer" />
-            </div>
-            <div class="comment__text">
-              <h5>منى محمود</h5>
-              <div class="rating">
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gold"></i>
-                <i class="fas fa-star rating-gray"></i>
-              </div>
-              <p>منتج رائع أنصح بشرائه مصنوع من أقمشة عالية الجودة</p>
-            </div>
-          </div>
+              <td>
+                <select name="quantity1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected>3</option>
+                </select>
+              </td>
+              <td>1200$</td>
+              <td>
+                <button class="btn btn-outline-danger">حذف</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex cart__media">
+                  <img src="images/polo_2.jpg" alt="lacoste" />
+                  <div class="media-body">
+                    <h5 class="d-none d-sm-block">تي شرت رجالي أديداس</h5>
+                    <p class="text-muted d-none d-sm-block">ملابس رجالي</p>
+                  </div>
+                </div>
+              </td>
+              <td>400$</td>
+              <td>
+                <select name="quantity1">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3" selected>3</option>
+                </select>
+              </td>
+              <td>1200$</td>
+              <td>
+                <button class="btn btn-outline-danger">حذف</button>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                <h5>
+                  السعر الإجمالي للمنتجات :
+                  <span class="text-muted">1500$</span>
+                </h5>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="cart-complete">
+          <button>إكمال عملية الشراء</button>
         </div>
       </div>
     </section>
-    <!-- End Product Details Section -->
+    <!-- End Cart Section -->
 
     <!-- Start Suggestions Section  -->
-    <section class="suggestions">
+    <section class="suggestions mt-5">
       <div class="container">
         <div class="section__title">
           <h3>اقترحنا لك</h3>
