@@ -76,9 +76,15 @@ module.exports = {
       template: path.resolve(__dirname, 'src/checkout.html'),
     }),
 
+    new HtmlWebpackPlugin({
+      filename: 'payment.html',
+      template: path.resolve(__dirname, 'src/payment.html'),
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     new MiniCssExtractPlugin({ filename: 'css/product.css' }),
     new MiniCssExtractPlugin({ filename: 'css/checkout.css' }),
+    new MiniCssExtractPlugin({ filename: 'css/payment.css' }),
     new CssMinimizerPlugin(),
   ],
 };
