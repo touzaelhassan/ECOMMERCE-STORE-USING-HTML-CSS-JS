@@ -33,6 +33,21 @@ body {
   height: 4px;
   background-color: #eb2a46;
 }
+
+.complete__checkout {
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #eb2a46;
+  border: 2px solid #eb2a46;
+  text-decoration: none;
+}
+
+.complete__checkout:hover {
+  color: #ff3956;
+  background-color: #fff;
+  font-weight: 500;
+}
 /* End General Styles */
 
 /* Start Header Section */

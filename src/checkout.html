@@ -21,7 +21,9 @@
             >عربي</a
           >
           <div class="navbar-cart order-lg-5 ms-lg-3">
-            <i class="fas fa-shopping-cart d-block text-muted"></i>
+            <a href="checkout.html"
+              ><i class="fas fa-shopping-cart d-block text-muted"></i
+            ></a>
           </div>
           <button
             class="navbar-toggler p-0 rounded-0 text-muted shadow-none"
@@ -35,6 +37,8 @@
             <i class="fas fa-bars d-block"></i>
           </button>
           <form
+            action="search.html"
+            method="GET"
             class="d-flex border-top border-bottom py-4 py-lg-0 navbar-form"
           >
             <input
@@ -59,7 +63,7 @@
                 <a
                   class="nav-link text-muted active"
                   aria-current="page"
-                  href="#"
+                  href="index.html"
                   >الصفحة الرئيسية</a
                 >
               </li>
@@ -81,10 +85,14 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-muted" href="#">البحث المتقدم</a>
+                <a class="nav-link text-muted" href="search.html"
+                  >البحث المتقدم</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-muted" href="#">تواصل معنا</a>
+                <a class="nav-link text-muted" href="contact.html"
+                  >تواصل معنا</a
+                >
               </li>
             </ul>
           </div>
@@ -207,7 +215,9 @@
           </tfoot>
         </table>
         <div class="cart-complete">
-          <button>إكمال عملية الشراء</button>
+          <a class="complete__checkout" href="payment.html"
+            >إكمال عملية الشراء</a
+          >
         </div>
       </div>
     </section>
