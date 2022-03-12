@@ -86,11 +86,17 @@ module.exports = {
       template: path.resolve(__dirname, 'src/search.html'),
     }),
 
+    new HtmlWebpackPlugin({
+      filename: 'contact.html',
+      template: path.resolve(__dirname, 'src/contact.html'),
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     new MiniCssExtractPlugin({ filename: 'css/product.css' }),
     new MiniCssExtractPlugin({ filename: 'css/checkout.css' }),
     new MiniCssExtractPlugin({ filename: 'css/payment.css' }),
     new MiniCssExtractPlugin({ filename: 'css/search.css' }),
+    new MiniCssExtractPlugin({ filename: 'css/contact.css' }),
     new CssMinimizerPlugin(),
   ],
 };

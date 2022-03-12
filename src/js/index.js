@@ -1,5 +1,6 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.rtl.min.css';
+import '../css/contact.css';
 import '../css/search.css';
 import '../css/payment.css';
 import '../css/checkout.css';

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>متجر عربي</title>
+  </head>
+  <body>
+    <!-- Start Header Section -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-0">
+        <div class="container">
+          <a class="navbar-brand me-auto mb-3 me-lg-4" href="index.html"
+            >عربي</a
+          >
+          <div class="navbar-cart order-lg-5 ms-lg-3">
+            <a href="checkout.html"
+              ><i class="fas fa-shopping-cart d-block text-muted"></i
+            ></a>
+          </div>
+          <button
+            class="navbar-toggler p-0 rounded-0 text-muted shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars d-block"></i>
+          </button>
+          <form
+            action="search.html"
+            method="GET"
+            class="d-flex border-top border-bottom py-4 py-lg-0 navbar-form"
+          >
+            <input
+              class="form-control m-0 rounded-0 shadow-none"
+              type="search"
+              placeholder="كلمة البحث"
+              aria-label="Search"
+            />
+            <button
+              class="btn navbar-btn px-4 rounded-0 shadow-none"
+              type="submit"
+            >
+              ابحث
+            </button>
+          </form>
+          <div
+            class="collapse navbar-collapse bg-light"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-muted active"
+                  aria-current="page"
+                  href="index.html"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-muted dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  أقسام المتجر
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">أطفال</a></li>
+                  <li><a class="dropdown-item" href="#">نسائي</a></li>
+                  <li><a class="dropdown-item" href="#">رجالي</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="search.html"
+                  >البحث المتقدم</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="contact.html"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__title">
+          <h2>تواصل معنا</h2>
+        </div>
+        <div class="row contact__content">
+          <div class="col-md-6 contact__image">
+            <img src="images/map.jpg" alt="map" />
+          </div>
+          <div class="col-md-6 contact__form">
+            <input class="contact__input" type="text" placeholder="الإسم" />
+            <input
+              class="contact__input"
+              type="text"
+              placeholder="البريد الإلكتروني"
+            />
+            <textarea
+              class="contact__textarea"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="الرسالة"
+            ></textarea>
+            <input class="contact__btn" type="submit" value="إرسال" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer Section -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./images/logo_footer.png" alt="logo" />
+      </div>
+      <nav class="footer__navigation">
+        <ul>
+          <li><a href="#">الصفحة الرئيسية</a></li>
+          <li><a href="#">البحث المتقدم</a></li>
+          <li><a href="#">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <div class="footer__form">
+        <p class="form__title">تابع النشرة البريدية لأحدث العروض</p>
+        <form>
+          <input type="email" placeholder="البريد الإلكتروني" />
+          <button type="submit">متابعة</button>
+        </form>
+      </div>
+      <div class="social-media">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-whatsapp-square"></i>
+      </div>
+      <p class="copyright">جميع الحقوق محفوظة للمتجر &copy; 2022</p>
+    </footer>
+    <!-- End Footer Section -->
+  </body>
+</html>
