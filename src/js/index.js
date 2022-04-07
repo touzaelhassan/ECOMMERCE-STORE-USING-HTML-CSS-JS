@@ -7,3 +7,42 @@ import '../css/checkout.css';
 import '../css/product.css';
 import '../css/style.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+
+const dataProductQuantities = document.querySelectorAll(
+  '[data-product-quantity]'
+);
+
+const productPriceElements = document.querySelectorAll(
+  '.total-price-for-product'
+);
+
+let totalElement = document.querySelector('.total-price');
+
+function updateProductPriceTotal(productPrice, quantity, index) {
+  productPriceElements.forEach((p_item, p_index) => {
+    if (p_index + 1 == index) {
+      p_item.innerHTML = productPrice * quantity;
+    }
+  });
+}
+
+function updateTotal() {
+  let total = 0;
+  productPriceElements.forEach((item) => {
+    total += parseInt(item.innerText);
+  });
+  totalElement.innerText = total;
+}
+
+dataProductQuantities.forEach((dataProductQuantity) => {
+  dataProductQuantity.addEventListener('change', function (event) {
+    let productPrice = parseInt(
+      this.parentElement.parentElement.dataset.productPrice
+    );
+    let quantity = parseInt(event.target.value);
+    let index = this.parentElement.parentElement.getAttribute('id');
+
+    updateProductPriceTotal(productPrice, quantity, index);
+    updateTotal();
+  });
+});
