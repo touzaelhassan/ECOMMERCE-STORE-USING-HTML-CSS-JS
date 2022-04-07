@@ -17,6 +17,7 @@ const productPriceElements = document.querySelectorAll(
 );
 
 let totalElement = document.querySelector('.total-price');
+const deleteButtons = document.querySelectorAll('.delete__product');
 
 function updateProductPriceTotal(productPrice, quantity, index) {
   productPriceElements.forEach((p_item, p_index) => {
@@ -29,7 +30,9 @@ function updateProductPriceTotal(productPrice, quantity, index) {
 function updateTotal() {
   let total = 0;
   productPriceElements.forEach((item) => {
-    total += parseInt(item.innerText);
+    if (item.innerText != '') {
+      total += parseInt(item.innerText);
+    }
   });
   totalElement.innerText = total;
 }
@@ -44,5 +47,25 @@ dataProductQuantities.forEach((dataProductQuantity) => {
 
     updateProductPriceTotal(productPrice, quantity, index);
     updateTotal();
+  });
+});
+
+function updateAfterDelete(productTotal) {
+  let total = parseInt(totalElement.innerText);
+  total = total - productTotal;
+  totalElement.innerText = total;
+}
+
+deleteButtons.forEach((button) => {
+  button.addEventListener('click', function () {
+    let product = this.parentElement.parentElement;
+    let productTotal = parseInt(
+      product.querySelector('.total-price-for-product').innerText
+    );
+
+    updateAfterDelete(productTotal);
+
+    product.remove();
+    product.querySelector('.total-price-for-product').innerText = '';
   });
 });
