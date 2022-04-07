@@ -69,3 +69,24 @@ deleteButtons.forEach((button) => {
     product.querySelector('.total-price-for-product').innerText = '';
   });
 });
+
+const sizeChoiceButtons = document.querySelectorAll('.size__choice ul li');
+const colorChoiceButtons = document.querySelectorAll('.color__choice ul li');
+
+sizeChoiceButtons.forEach((button) => {
+  button.addEventListener('click', function () {
+    for (let i = 0; i < sizeChoiceButtons.length; i++) {
+      sizeChoiceButtons[i].classList.remove('active');
+    }
+    this.classList.add('active');
+  });
+});
+
+colorChoiceButtons.forEach((button) => {
+  button.addEventListener('click', function () {
+    for (let i = 0; i < colorChoiceButtons.length; i++) {
+      colorChoiceButtons[i].classList.remove('active');
+    }
+    this.classList.add('active');
+  });
+});
